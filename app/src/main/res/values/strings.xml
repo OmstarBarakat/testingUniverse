@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Splash App</string>
+    <string name="action_settings">Settings</string>
+    <string name="helloword">Welcome!</string>
+</resources>
