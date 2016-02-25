@@ -11,10 +11,8 @@ public class SplashScrn extends Activity{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.splash);
-
         final SplashScrn sPlash = this;
+        setContentView(R.layout.splash);
 
         mSplash =  new Thread(){
             @Override
@@ -32,16 +30,12 @@ public class SplashScrn extends Activity{
                 Intent intent = new Intent();
                 intent.setClass(SplashScrn.this, MainActivity.class);
                 startActivity(intent);
-                //stop();
             }
         };
 
         mSplash.start();
     }
 
-    /**
-     * Processes splash screen touch events
-     */
     @Override
     public boolean onTouchEvent(MotionEvent evt)
     {
